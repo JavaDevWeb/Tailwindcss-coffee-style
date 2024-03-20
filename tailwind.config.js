@@ -15,13 +15,14 @@ module.exports = {
         } 
       },
       keyframes: {
-        slideDown: {
-          '0%': { transform: 'translateY(-100%)' },
-          '100%': { transform: 'translateY(0)' },
-        }
+        slideDown: { '0%': { transform: 'translateY(-100%)' }, '100%': { transform: 'translateY(0)' }},
+        fadeIn: {  
+          '0%': { transform:'translate-y-6', opacity: 0 },
+          '100%': { transform:'translate-y-0', opacity: 1 }},
       },
       animation: {
-        slideDown: 'slideDown 0.3s ease-in-out',
+        slideDown: 'slideDown 0.5s ease-in-out',
+        fadeIn: 'fadeIn 0.5s ease-in-out',
       },
       backgroundImage: {
         'slider-bg' : 'url("./img/slider/slider-top.png")',
