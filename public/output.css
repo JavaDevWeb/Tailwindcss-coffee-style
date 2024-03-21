@@ -562,6 +562,10 @@ video {
   left: 50%;
 }
 
+.left-\[calc\(-50vw\+49\.44\%\)\]{
+  left: calc(-50vw + 49.44%);
+}
+
 .right-3{
   right: 0.75rem;
 }
@@ -588,6 +592,11 @@ video {
 .my-8{
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.my-6{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .mb-16{
@@ -662,12 +671,20 @@ video {
   height: 380px;
 }
 
+.h-\[400px\]{
+  height: 400px;
+}
+
 .h-\[530px\]{
   height: 530px;
 }
 
 .h-full{
   height: 100%;
+}
+
+.h-\[300px\]{
+  height: 300px;
 }
 
 .w-11\/12{
@@ -680,6 +697,10 @@ video {
 
 .w-\[100px\]{
   width: 100px;
+}
+
+.w-\[100vw\]{
+  width: 100vw;
 }
 
 .w-\[95\%\]{
@@ -764,16 +785,16 @@ video {
   justify-content: space-between;
 }
 
+.gap-3{
+  gap: 0.75rem;
+}
+
 .gap-5{
   gap: 1.25rem;
 }
 
 .gap-8{
   gap: 2rem;
-}
-
-.gap-3{
-  gap: 0.75rem;
 }
 
 .bg-gray-900{
@@ -803,6 +824,10 @@ video {
   background-image: url('./img/coffee-mugs/coffee2.png');
 }
 
+.bg-\[url\(\'\.\/img\/lifestyle\/lifestyle1\.png\'\)\]{
+  background-image: url('./img/lifestyle/lifestyle1.png');
+}
+
 .bg-\[url\(\'\.\/img\/manazine\/manazine1\.png\'\)\]{
   background-image: url('./img/manazine/manazine1.png');
 }
@@ -813,6 +838,10 @@ video {
 
 .bg-\[url\(\'\.\/img\/manazine\/manazine3\.png\'\)\]{
   background-image: url('./img/manazine/manazine3.png');
+}
+
+.bg-\[url\(\'\.\/img\/parallax\/parallax\.png\'\)\]{
+  background-image: url('./img/parallax/parallax.png');
 }
 
 .bg-\[url\(\'\.\/img\/products\/product1\.png\'\)\]{
@@ -855,8 +884,20 @@ video {
   background-image: url('./img/slider/slider-top.png');
 }
 
+.bg-\[url\(\'\.\/img\/lifestyle\/lifestyle2\.png\'\)\]{
+  background-image: url('./img/lifestyle/lifestyle2.png');
+}
+
+.bg-\[url\(\'\.\/img\/lifestyle\/lifestyle3\.png\'\)\]{
+  background-image: url('./img/lifestyle/lifestyle3.png');
+}
+
 .bg-cover{
   background-size: cover;
+}
+
+.bg-fixed{
+  background-attachment: fixed;
 }
 
 .bg-bottom{
@@ -902,6 +943,10 @@ video {
 
 .pl-8{
   padding-left: 2rem;
+}
+
+.text-left{
+  text-align: left;
 }
 
 .text-center{
@@ -950,6 +995,10 @@ video {
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-\[13px\]{
+  font-size: 13px;
 }
 
 .font-medium{
@@ -1287,12 +1336,12 @@ video {
     display: flex;
   }
 
-  .md\:h-\[430px\]{
-    height: 430px;
-  }
-
   .md\:h-\[130px\]{
     height: 130px;
+  }
+
+  .md\:h-\[430px\]{
+    height: 430px;
   }
 
   .md\:grid-cols-2{
@@ -1309,6 +1358,22 @@ video {
 
   .md\:gap-4{
     gap: 1rem;
+  }
+
+  .md\:gap-3{
+    gap: 0.75rem;
+  }
+
+  .md\:gap-8{
+    gap: 2rem;
+  }
+
+  .md\:gap-6{
+    gap: 1.5rem;
+  }
+
+  .md\:gap-5{
+    gap: 1.25rem;
   }
 
   .md\:px-32{
