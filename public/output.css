@@ -644,6 +644,10 @@ video {
   margin-top: 2rem;
 }
 
+.block{
+  display: block;
+}
+
 .flex{
   display: flex;
 }
@@ -1259,7 +1263,8 @@ video {
 }
 
 .ct-subheadline{
-  margin-bottom: 6rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1301,6 +1306,54 @@ video {
 
 .ct-button:hover{
   --tw-bg-opacity: 0.95;
+}
+
+#root {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+}
+
+.ct-no-parallax, 
+.ct-parallax {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.ct-parallax {
+  height: 40vh;
+  position: relative;
+  z-index: -1;
+}
+
+.ct-no-parallax {
+  height: auto;
+  z-index: 9999;
+  background: white;
+}
+
+.ct-parallax-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+@media (min-width: 1280px) {
+  .ct-parallax {
+    height: 70vh;
+    transform-style: preserve-3d;
+  }
+
+  .ct-parallax-image {
+    transform: translateZ(-1px) scale(1.5);
+  }
 }
 
 .placeholder\:text-xs::-moz-placeholder{
